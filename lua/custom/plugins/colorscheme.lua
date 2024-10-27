@@ -38,4 +38,28 @@ local catppuccin = {
   end,
 }
 
-return catppuccin
+local bamboo = {
+  'ribru17/bamboo.nvim',
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require('bamboo').setup {
+      -- optional configuration here
+    }
+    require('bamboo').load()
+  end,
+}
+
+local onedark = {
+  'navarasu/onedark.nvim',
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require('onedark').setup {
+      style = 'darker',
+    }
+    require('onedark').load()
+  end,
+}
+
+return onedark
