@@ -1,4 +1,9 @@
 -- [[ Setting options ]]
+
+-- Function folds
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldtext = 'v:lua.vim.treesitter.foldtext()'
+
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`

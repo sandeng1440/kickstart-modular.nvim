@@ -62,4 +62,4 @@ local onedark = {
   end,
 }
 
-return gruvbox
+return tokyonight
