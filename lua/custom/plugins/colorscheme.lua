@@ -8,7 +8,8 @@ local gruvbox = {
   end,
 }
 
-local tokyonight = { -- You can easily change to a different colorscheme.
+local tokyonight = {
+  -- You can easily change to a different colorscheme.
   -- Change the name of the colorscheme plugin below, and then
   -- change the command in the config to whatever the name of that colorscheme is.
   --
@@ -62,4 +63,17 @@ local onedark = {
   end,
 }
 
-return tokyonight
+local cyberdream = {
+  "scottmckendry/cyberdream.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require('cyberdream').setup {
+      transparent = true,
+      borderless_telescope = false,
+    }
+    require('cyberdream').load()
+  end,
+}
+
+return cyberdream
