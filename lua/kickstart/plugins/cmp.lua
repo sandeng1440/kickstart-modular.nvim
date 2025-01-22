@@ -49,11 +49,9 @@ return {
         },
         completion = { completeopt = 'menu,menuone,noinsert' },
         window = {
-          completion = {
-            border = 'rounded',
-          },
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
         },
-
         -- For an understanding of why these mappings were
         -- chosen, you will need to read `:help ins-completion`
         --
@@ -65,8 +63,8 @@ return {
           ['<C-p>'] = cmp.mapping.select_prev_item(),
 
           -- Scroll the documentation window [b]ack / [f]orward
-          ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-          ['<C-f>'] = cmp.mapping.scroll_docs(4),
+          ['<C-b>'] = cmp.mapping.scroll_docs(-2),
+          ['<C-f>'] = cmp.mapping.scroll_docs(2),
 
           -- Accept ([y]es) the completion.
           --  This will auto-import if your LSP supports it.
