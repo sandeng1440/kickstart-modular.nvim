@@ -6,6 +6,7 @@ return {
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
+        'rust',
         'bash',
         'go',
         'c',
